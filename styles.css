@@ -1,3 +1,14 @@
+/* TODO: Change the line height of the header. see reset.css documentation */
+@font-face {
+    font-family: 'Norse';
+    src: url('./assets/fonts/Norse-Bold.woff2') format('woff2'),
+        url('./assets/fonts/Norse-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 .page {
     display: flex;
 }
@@ -5,14 +16,38 @@
 .sidebar {
     width: 30vw;
     height: 100vh;
-    background:no-repeat center/100% url(./assets/images/background-image.jpg);
+    background:url("./assets/images/background-image.jpg") center / cover;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
 }
 
-.sidebar p {
-    text-align: center;
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 12vh;
+    width: 100%;
+    margin-top: 18vh;
+    margin-bottom: auto;
+    background-color: rgba(0, 0, 0, 75%);
+    font-family: Norse;
+    
+    font-size: 48px;
+    color: white;
+}
+
+.sidebar-header img {
+    height: 12vh;
+}
+
+.sidebar-footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 1rem;
+}
+
+.sidebar-footer p {
     color: white;
 }
 
