@@ -1,0 +1,30 @@
+.page {
+    display: flex;
+}
+
+.sidebar {
+    width: 30vw;
+    height: 100vh;
+    background:no-repeat center/100% url(./assets/images/background-image.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.sidebar p {
+    text-align: center;
+    color: white;
+}
+
+.sidebar p a {
+    color: inherit;
+}
+
+.form-row {
+    display: flex;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+}
