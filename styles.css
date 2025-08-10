@@ -81,7 +81,7 @@
 }
 
 .main-form h1 {
-    margin: auto 5vw;
+    margin: auto 5vw 2.5vh;
 }
 
 .main-form {
@@ -104,6 +104,26 @@
 .form-control {
     display: flex;
     flex-direction: column;
+}
+
+form label {
+    color: #3b3f44;
+}
+
+form input{
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+form input:focus{
+    border-color: #007bff;
+    outline: none; 
+}
+
+form input:invalid {
+    border-color: red;
+    outline: none; 
 }
 
 .page-bottom button[type=submit] {
